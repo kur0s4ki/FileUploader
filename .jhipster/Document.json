@@ -1,0 +1,39 @@
+{
+  "applications": "*",
+  "entityTableName": "document",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "size",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "mimeType",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Document",
+  "relationships": [
+    {
+      "otherEntityName": "content",
+      "otherEntityRelationshipName": "document",
+      "relationshipName": "content",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "car",
+      "otherEntityRelationshipName": "document",
+      "relationshipName": "car",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ]
+}

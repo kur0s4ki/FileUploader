@@ -1,0 +1,21 @@
+{
+  "applications": "*",
+  "entityTableName": "car",
+  "fields": [
+    {
+      "fieldName": "model",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "Car",
+  "relationships": [
+    {
+      "otherEntityName": "document",
+      "otherEntityRelationshipName": "car",
+      "relationshipName": "document",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "applications": "*",
+  "entityTableName": "content",
+  "fields": [
+    {
+      "fieldName": "data",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "Content",
+  "relationships": [
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "document",
+      "otherEntityRelationshipName": "content",
+      "relationshipName": "document",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ]
+}
