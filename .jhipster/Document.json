@@ -1,5 +1,6 @@
 {
   "applications": "*",
+  "changelogDate": "20230701173535",
   "entityTableName": "document",
   "fields": [
     {
@@ -35,5 +36,6 @@
       "relationshipType": "many-to-one",
       "relationshipValidateRules": "required"
     }
-  ]
+  ],
+  "searchEngine": "no"
 }

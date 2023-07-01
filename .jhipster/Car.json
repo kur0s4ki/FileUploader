@@ -1,5 +1,6 @@
 {
   "applications": "*",
+  "changelogDate": "20230701173536",
   "entityTableName": "car",
   "fields": [
     {
@@ -17,5 +18,6 @@
       "relationshipSide": "left",
       "relationshipType": "one-to-many"
     }
-  ]
+  ],
+  "searchEngine": "no"
 }
